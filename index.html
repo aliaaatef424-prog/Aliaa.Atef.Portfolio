@@ -2,72 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Aliaa Atef Portfolio</title>
+  <title>Aliaa Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
     body {
+      margin: 0;
+      font-family: Arial;
       background: #f5f5f5;
-      color: #333;
     }
 
-    header {
-      background: #000;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
+    nav {
+      background: black;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
     }
 
     section {
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
 
     .hero {
-      background: linear-gradient(to right, #000, #444);
+      background: #222;
       color: white;
-      padding: 100px 20px;
     }
 
-    h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-    }
-
-    p {
-      max-width: 600px;
-      margin: auto;
-      line-height: 1.6;
-    }
-
-    .portfolio {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      width: 250px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    .portfolio-section {
+      background: #eee;
     }
 
     footer {
-      background: #000;
+      background: black;
       color: white;
       padding: 20px;
       text-align: center;
@@ -77,51 +45,70 @@
 
 <body>
 
-<header>
-  <h2>Aliaa Atef</h2>
-</header>
+<!-- NAV -->
+<nav>
+  <h3>Aliaa Atef</h3>
+</nav>
 
-<section class="hero">
-  <h1>Hello, I'm Aliaa 👋</h1>
-  <p>Graphic Designer passionate about branding, creativity, and elegant visuals.</p>
-</section>
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav"></div>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I’m a creative graphic designer focused on building unique and high-quality visual identities.
-    I love turning ideas into elegant designs that connect with people.
-  </p>
-</section>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
 
-<section id="portfolio">
-  <h2>My Work</h2>
+  <div class="hero-left">
+    <h1>Hello, I'm Aliaa 👋</h1>
+    <p>Graphic Designer</p>
+  </div>
 
-  <div class="portfolio">
-    <div class="card">
-      <h3>Brand Identity</h3>
-      <p>Elegant and modern branding designs.</p>
-    </div>
+  <div class="hero-divider"></div>
 
-    <div class="card">
-      <h3>Social Media</h3>
-      <p>Creative posts and campaigns.</p>
-    </div>
-
-    <div class="card">
-      <h3>Logos</h3>
-      <p>Unique and memorable logo designs.</p>
-    </div>
+  <div class="hero-right">
+    <p>Creative • Elegant • Unique</p>
   </div>
 </section>
 
-<section id="contact">
-  <h2>Contact Me</h2>
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <p>Creative Design • Branding • Visual Identity •</p>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I'm a graphic designer passionate about creating elegant and unique designs.
+  </p>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="work" class="portfolio-section">
+  <h2>My Work</h2>
+  <p>Coming soon... 👀</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Services</h2>
+  <p>Branding - Social Media - Logo Design</p>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>Experience</h2>
+  <p>Graphic Designer with a passion for creative visuals.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <h2>Contact</h2>
   <p>Email: your@email.com</p>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <p>© 2026 Aliaa Atef - All Rights Reserved</p>
+  <p>© 2026 Aliaa Atef</p>
 </footer>
 
 </body>
